@@ -1,108 +1,99 @@
 # Workshop 04 – Building a Full-Stack App with MongoDB
 
 ## Overview
-In this workshop, you will learn the fundamentals of **MongoDB** and **database integration** by building a full-stack Node.js application that persists data to a MongoDB database.
+In this workshop, you will complete the official **MongoDB Introduction Learning Path** to build foundational knowledge of MongoDB and database concepts.
 
-This workshop focuses on **practical understanding** of how to connect Express.js applications to MongoDB and perform CRUD operations on data.
+Your task is to complete the self-directed learning material at https://learn.mongodb.com/learn/learning-path/introduction-to-mongodb and submit proof of completion or a copy of your certification badge.
 
 ---
 
 ## Learning Objectives
 By the end of this workshop, you should be able to:
 - Understand MongoDB basics and document structure
-- Connect a Node.js application to MongoDB
-- Create models using Mongoose (ODM - Object Document Mapper)
+- Understand databases and collections in MongoDB
 - Perform CRUD operations (Create, Read, Update, Delete)
-- Validate data using Mongoose schemas
-- Build RESTful API endpoints that interact with a database
-- Handle database errors and edge cases
-- Understand async/await patterns with database operations
+- Query and filter data effectively
+- Understand indexing and aggregation concepts
+- Understand data validation and schemas
+- Apply MongoDB best practices
+- **Obtain MongoDB Introduction Certification** from the official learning platform
 
 ---
 
 ## Topics Covered
-- MongoDB fundamentals
-- MongoDB Atlas setup and cloud database
-- Mongoose ODM library
-- Schema and model definition
-- Data validation and middleware
-- CRUD operations with async/await
-- RESTful API design with database integration
-- Error handling and data persistence
-- Database indexing basics
-- ObjectId and data types
+Topics covered in the MongoDB Introduction Learning Path include:
+- MongoDB fundamentals and document model
+- Databases and collections
+- CRUD operations (Create, Read, Update, Delete)
+- Query filters and operators
+- Data validation and schemas
+- Indexing strategies
+- Aggregation pipeline basics
+- Transactions
+- MongoDB Atlas platform
+- Best practices and performance optimization
 
 ---
 
 ## Prerequisites
-Before starting this workshop, make sure you have:
-- Basic knowledge of JavaScript and async/await
-- Understanding of HTML and CSS
-- Completed Workshop 03 (Express.js) or equivalent knowledge
-- Understanding of HTTP and RESTful APIs
-- Installed:
-  - Node.js (LTS version recommended)
-  - npm (comes with Node.js)
-  - Git
-  - A code editor (VS Code recommended)
+Before starting this databases and data management
+- A web browser
+- A MongoDB account (free at https://www.mongodb.com/cloud/atlas)
+- Willingness to learn through guided, interactive modules
+- Approximately 4-6 hours to complete the learning path
 - Created a MongoDB Atlas account (free tier available)
 
 ---
 
 ## Project Description
-You will build:
-> **A full-stack web application with Express.js backend that stores and retrieves data from MongoDB**
+Your task is to:
+> **Complete the MongoDB Introduction Learning Path and obtain certification**
 
-The application will:
-- Connect to MongoDB (local or MongoDB Atlas)
-- Define data models with Mongoose schemas
-- Implement CRUD API endpoints
-- Display data from the database on web pages
-- Handle form submissions and store data
-- Provide JSON API endpoints for frontend integration
-- Include error handling and validation
+The learning path includes:
+- Interactive lessons on MongoDB concepts
+- Hands-on exercises and challenges
+- Knowledge assessments and quizzes
+- Practical examples and use cases
+- Best practices and design patterns
+- Completion certificate upon finishing all modules
+
+**Deliverable**: Submit proof of completion (screenshot or copy of certification badge)
 
 ---
 
 ## Getting Started
 
-### 1. Clone the Repository
-```bash
-git clone <repository-url>
-cd Workshop04_mongodb
-```
+### 1. Access the Learning Platform
+1. Go to https://learn.mongodb.com/learn/learning-path/introduction-to-mongodb
+2. Sign in with your MongoDB account (or create one if needed)
 
-### 2. Navigate to the Starter Folder
-```bash
-cd starter
-```
+### 2. Start the Learning Path
+- Click "Start Learning" or "Enroll" to begin the learning path
+- Work through each module sequentially
+- Complete all lessons, exercises, and assessments
 
-### 3. Install Dependencies
-```bash
-npm install
-```
+### 3. Modules to Complete
+Work through all modules in the learning path, which typically include:
+- Introduction to MongoDB
+- MongoDB Fundamentals
+- CRUD Operations
+- Querying Data
+- Data Validation and Schemas
+- Indexing
+- Aggregation Basics
+- Transactions
+- MongoDB Atlas
+- Best Practices
 
-### 4. Set Up MongoDB
-- Create a free MongoDB Atlas account at https://www.mongodb.com/cloud/atlas
-- Create a free cluster
-- Get your connection string
-- OR use a local MongoDB installation
+### 4. Obtain Your Certification
+- After completing all modules and assessments, you will receive a completion badge/certificate
+- The certificate will appear in your MongoDB learning profile
+- Download or take a screenshot of your certificate as proof
 
-### 5. Configure Environment Variables
-Create a `.env` file in the `starter/` directory:
-```
-MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/workshop04
-PORT=3000
-NODE_ENV=development
-```
-
-### 6. Run the Application
-```bash
-npm start        # Run with Node.js
-npm run dev      # Run with Nodemon for auto-restart
-```
-
-The server will start at `http://localhost:3000`
+### 5. Submit Your Work
+- Save a copy or screenshot of your certification
+- Submit it to your instructor as proof of completion
+- Keep the certificate link for your portfolio/resume
 
 ---
 
@@ -110,14 +101,11 @@ The server will start at `http://localhost:3000`
 ```
 Workshop04_mongodb/
 ├── README.md                 # This file
-├── requirements.md           # Detailed task requirements
-├── starter/                  # Your working directory
+├── requirements.md           # Additional resources and references
+├── starter/                  # Optional: Full-stack app example (for future use)
 │   ├── package.json
-│   ├── server.js            # Main server file
-│   ├── .env                 # Environment variables (create this)
-│   ├── models/              # Mongoose models (create this)
-│   ├── routes/              # API routes (create this)
-│   ├── public/              # Static files
+│   ├── server.js
+│   ├── public/               # Static files
 │   │   ├── index.html
 │   │   ├── about.html
 │   │   ├── contact.html
@@ -125,104 +113,147 @@ Workshop04_mongodb/
 │   │   ├── 500.html
 │   │   └── styles/
 │   │       └── style.css
-│   └── config/              # Database config (create this)
-├── tuntiharjoitukset/       # Class examples and demonstrations
-│   ├── package.json
-│   ├── example-1-connect.js
-│   ├── example-2-crud.js
-│   └── public/              # Same static files
+└── tuntiharjoitukset/        # Optional: Classroom examples and demonstrations
+    ├── package.json
+    ├── example-1-connect.js
+    ├── example-2-crud.js
+    ├── example-3-queries.js
+    └── public/               # Static files
 ```
+
+**Note**: The `starter/` and `tuntiharjoitukset/` folders are included as reference materials and optional practice. The primary task is to complete the online learning path.
 
 ---
 
 ## Key Concepts
 
-### MongoDB vs Relational Databases
-- **Document-based**: Data stored as JSON-like documents
-- **Schema-less**: Flexible structure (with Mongoose we add structure)
-- **Scalable**: Designed for horizontal scaling
-- **NoSQL**: No SQL queries (uses MongoDB query language)
+### MongoDB
+- **Document-based**: Data stored as JSON-like BSON documents
+- **NoSQL Database**: Uses MongoDB query language instead of SQL
+- **Schema Flexibility**: Dynamic schemas with optional validation
+- **Scalability**: Built for horizontal scaling and distributed systems
 
-### Mongoose
-- ODM (Object Document Mapper) for MongoDB
-- Provides schema validation
-- Relationship management
-- Middleware hooks (pre/post operations)
-- Query building
+### Collections and Databases
+- **Database**: Container for collections (like a database in SQL)
+- **Collection**: Group of documents (like a table in SQL)
+- **Document**: Individual record with fields (like a row in SQL)
+- **Field**: Key-value pair within a document
 
 ### CRUD Operations
-- **Create**: Insert new documents into the database
-- **Read**: Query and retrieve documents
+- **Create (Insert)**: Add new documents to a collection
+- **Read (Find)**: Query and retrieve documents
 - **Update**: Modify existing documents
-- **Delete**: Remove documents from the database
+- **Delete**: Remove documents from a collection
 
 ---
 
-## Common Commands
+## Common MongoDB Concepts
 
-### Development
-- `npm start` - Start the server
-- `npm run dev` - Start with auto-reload (nodemon)
+### Data Types
+- String, Number, Boolean, Date
+- Array, Object
+- Null, ObjectId
+- Binary Data, Regular Expressions
 
-### Database
-- `mongosh` - MongoDB shell for testing queries
-- View MongoDB Atlas in the browser at https://cloud.mongodb.com
+### Query Operators
+- Comparison: `$eq`, `$ne`, `$gt`, `$gte`, `$lt`, `$lte`
+- Logical: `$and`, `$or`, `$not`, `$nor`
+- Array: `$in`, `$all`, `$elemMatch`
+- Element: `$exists`, `$type`
+
+### Indexing
+- Improves query performance
+- Types: Single field, compound, text, geospatial
+- Trade-offs: Speed vs storage space
+
+---
+
+## Tips for Success
+
+1. **Take your time** with each module - don't rush through the content
+2. **Complete all exercises** - hands-on practice reinforces learning
+3. **Take the assessments** - they ensure you understand the material
+4. **Refer to MongoDB documentation** - bookmark it for future reference
+5. **Follow along with interactive examples** - use the built-in MongoDB sandbox
+6. **Ask questions** - review concepts you don't understand fully
+7. **Keep your certificate** - save it after completion
 
 ---
 
 ## Troubleshooting
 
-### Cannot connect to MongoDB
-- Check your connection string in `.env`
-- Verify MongoDB Atlas IP whitelist includes your IP
-- Check that MongoDB service is running (for local databases)
+### Technical Issues with the Learning Platform
+- Clear your browser cache if content doesn't load
+- Try a different browser if you encounter display issues
+- Use Chrome, Firefox, Safari, or Edge for best compatibility
+- Check that JavaScript is enabled in your browser
+- Ensure you have a stable internet connection
 
-### Module not found errors
-- Run `npm install` to ensure all dependencies are installed
-- Check that `node_modules/` directory exists
-
-### Port already in use
-- Change `PORT` in `.env` to a different number (e.g., 3001)
-- Or kill the process using port 3000
+### Account Issues
+- If you forget your MongoDB University password, use the "Forgot Password" link
+- Make sure you're using the correct email for your account
+- Contact MongoDB Learning Support if you cannot access the platform
 
 ---
 
 ## Resources
 
-### MongoDB
+### Official Learning
+- **[MongoDB Introduction Learning Path](https://learn.mongodb.com/learn/learning-path/introduction-to-mongodb)** - The main resource for this workshop
 - [MongoDB Documentation](https://docs.mongodb.com/)
 - [MongoDB Atlas Setup](https://docs.mongodb.com/atlas/)
-- [MongoDB Query Language](https://docs.mongodb.com/manual/reference/query-filter-documents/)
+- [MongoDB Query Language Reference](https://docs.mongodb.com/manual/reference/query-filter-documents/)
 
-### Mongoose
-- [Mongoose Documentation](https://mongoosejs.com/)
-- [Mongoose Guide](https://mongoosejs.com/docs/guide.html)
-- [Mongoose API](https://mongoosejs.com/docs/api/model.html)
+### Additional Reading
+- [MongoDB Best Practices](https://docs.mongodb.com/manual/administration/security-best-practices/)
+- [MongoDB Data Modeling Guide](https://docs.mongodb.com/manual/core/data-modeling-introduction/)
+- [MongoDB Performance](https://docs.mongodb.com/manual/administration/analyzing-mongodb-performance/)
 
-### Learning Resources
-- [Express.js Guide](https://expressjs.com/)
-- [Node.js Best Practices](https://github.com/goldbergyoni/nodebestpractices)
-- [REST API Tutorial](https://restfulapi.net/)
+### Optional Practice Materials
+- `starter/` folder - Full-stack application example (for future workshops)
+- `tuntiharjoitukset/` folder - Classroom demonstrations and code examples
 
 ---
 
 ## Next Steps
 
-After completing this workshop:
-- Workshop 05: Authentication and Authorization
-- Workshop 06: File Uploads and Image Processing
-- Workshop 07: Real-time Applications with WebSockets
+After completing this workshop and obtaining your MongoDB certification:
+- **Workshop 05**: Authentication and Authorization (using your MongoDB knowledge)
+- **Workshop 06**: Building Full-Stack Applications with MongoDB and Express.js
+- **Workshop 07**: Advanced Database Design and Optimization
+- **Workshop 08**: Real-time Applications with MongoDB and WebSockets
+
+You can also explore optional advanced MongoDB topics:
+- Aggregation pipelines
+- Transactions in detail
+- Sharding and replication
+- Performance optimization
+- Data migration strategies
 
 ---
 
 ## Support
 
 For questions or issues:
-- Review the `requirements.md` for detailed task descriptions
-- Check the `tuntiharjoitukset/` folder for examples
-- Consult the MongoDB and Mongoose documentation
-- Reach out to your instructor
+1. **Review the Learning Path**: Return to any module you need clarification on
+2. **Check MongoDB Documentation**: https://docs.mongodb.com/
+3. **Explore Examples**: Check the `tuntiharjoitukset/` folder for code examples
+4. **Contact MongoDB Support**: The learning platform has built-in support options
+5. **Reach out to your instructor**: Ask your trainer/instructor for guidance
 
 ---
 
-**Happy coding! 🚀**
+## Submission Checklist
+
+Before submitting, ensure you have:
+- [ ] Completed all modules in the MongoDB Introduction Learning Path
+- [ ] Completed all assessments and quizzes
+- [ ] Obtained your completion certificate or badge
+- [ ] Saved a screenshot or copy of your certificate
+- [ ] Reviewed your learning path profile on MongoDB University
+
+**Deliverable**: Submit your certification proof (screenshot/download) to your instructor
+
+---
+
+**Good luck! You're starting your MongoDB journey! 🚀**
