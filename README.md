@@ -40,7 +40,7 @@ Before starting this databases and data management
 - A web browser
 - A MongoDB account (free at https://www.mongodb.com/cloud/atlas)
 - Willingness to learn through guided, interactive modules
-- Approximately 4-6 hours to complete the learning path
+- Approximately 15 hours to complete the learning path
 - Created a MongoDB Atlas account (free tier available)
 
 ---
@@ -215,22 +215,6 @@ Workshop04_mongodb/
 
 ---
 
-## Next Steps
-
-After completing this workshop and obtaining your MongoDB certification:
-- **Workshop 05**: Authentication and Authorization (using your MongoDB knowledge)
-- **Workshop 06**: Building Full-Stack Applications with MongoDB and Express.js
-- **Workshop 07**: Advanced Database Design and Optimization
-- **Workshop 08**: Real-time Applications with MongoDB and WebSockets
-
-You can also explore optional advanced MongoDB topics:
-- Aggregation pipelines
-- Transactions in detail
-- Sharding and replication
-- Performance optimization
-- Data migration strategies
-
----
 
 ## Support
 
