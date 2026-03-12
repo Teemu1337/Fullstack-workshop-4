@@ -26,22 +26,39 @@ async function updateOneStudent(studentId, updatedFields) {
 }
 
 // --- Update many students by city ---
+// ...existing code...
+function escapeRegex(value) {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
 async function updateManyStudents(filterCity, updatedFields) {
   console.log(`\nUpdating all students in city: ${filterCity}`);
 
+  // Diagnostic: show existing city values in current collection
+  const cities = await Opiskelija.distinct('city');
+  console.log('Available city values:', cities);
+
+  // Case-insensitive exact city match, trims user input
+  const cityRegex = new RegExp(`^${escapeRegex(filterCity.trim())}$`, 'i');
+
   const result = await Opiskelija.updateMany(
-    { city: filterCity },   // filter by city
-    { $set: updatedFields } // fields to update
+    { city: cityRegex },
+    { $set: updatedFields }
   );
 
-  console.log(`Matched: ${result.matchedCount} | Modified: ${result.modifiedCount}`);
+  const matched = result.matchedCount ?? result.n ?? 0;
+  const modified = result.modifiedCount ?? result.nModified ?? 0;
 
-  if (result.modifiedCount > 0) {
-    console.log(`✅ Successfully updated ${result.modifiedCount} student(s) in ${filterCity}`);
+  console.log(`Matched: ${matched} | Modified: ${modified}`);
+
+  if (modified > 0) {
+    console.log(`✅ Successfully updated ${modified} student(s) in ${filterCity}`);
   } else {
     console.log(`No students updated in city: ${filterCity}`);
   }
 }
+// ...existing code...
+// ...existing code...
 
 async function main() {
   try {

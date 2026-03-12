@@ -31,6 +31,9 @@ const opiskelijaSchema = new mongoose.Schema({
   enrollmentYear: {
     type: Number,
     required: true
+  }, 
+  campus: { 
+    type: String 
   }
 }, {
   // Target the existing Fullstack2026 collection
