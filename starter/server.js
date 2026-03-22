@@ -4,15 +4,15 @@ dns.setDefaultResultOrder('ipv4first');
 const express = require('express');
 const mongoose = require('mongoose');
 const path = require('path');
-require('dotenv').config();
+require('dotenv').config({ path: path.join(__dirname, '.env') });
 
 const app = express();
 app.use(express.json());
+
 // Testi
 console.log('MONGODB_URI:', process.env.MONGODB_URI);
+console.log('Current directory:', __dirname);
 
-const app = express();
-app.use(express.json());
 // Task 1
 mongoose.connect(process.env.MONGODB_URI, {
   useNewUrlParser: true,
